@@ -34,7 +34,7 @@
 
 #include "../inc/MarlinConfig.h"
 
-#if HAS_GRAPHICAL_LCD
+#if HAS_MARLINUI_U8GLIB
 
   #include "dogm/u8g_fontutf8.h"
   typedef u8g_uint_t lcd_uint_t;
@@ -79,7 +79,7 @@
   #define SETCURSOR(col, row)    lcd_moveto((col) * (MENU_FONT_WIDTH), ((row) + 1) * (MENU_FONT_HEIGHT))
   #define SETCURSOR_RJ(len, row) lcd_moveto(LCD_PIXEL_WIDTH - (len) * (MENU_FONT_WIDTH), ((row) + 1) * (MENU_FONT_HEIGHT))
 
-#elif HAS_CHARACTER_LCD
+#else
 
   #define _UxGT(a) a
   typedef uint8_t lcd_uint_t;
