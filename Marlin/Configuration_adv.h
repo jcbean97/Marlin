@@ -811,7 +811,7 @@
    * differs, a mode set eeprom write will be completed at initialization.
    * Use the option below to force an eeprom write to a V3.1 probe regardless.
    */
-  #define BLTOUCH_SET_5V_MODE
+  //#define BLTOUCH_SET_5V_MODE
 
   /**
    * Safety: Activate if connecting a probe with an unknown voltage mode.
@@ -1315,7 +1315,7 @@
   //#define SD_DETECT_STATE HIGH
 
   #if NONE(POWER_LOSS_RECOVERY, BINARY_FILE_TRANSFER, SDCARD_EEPROM_EMULATION)
-    #define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
+    //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
   #endif
   //#define SD_IGNORE_AT_STARTUP            // Don't mount the SD card when starting up
 
@@ -1444,7 +1444,7 @@
   /**
    * Auto-report SdCard status with M27 S<seconds>
    */
-  //#define AUTO_REPORT_SD_STATUS
+  #define AUTO_REPORT_SD_STATUS
 
   /**
    * Support for USB thumb drives using an Arduino USB Host Shield or
