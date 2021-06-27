@@ -1029,7 +1029,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-#define Z_MIN_PROBE_PIN PE4 // Pin 32 is the RAMPS default
+//#define Z_MIN_PROBE_PIN PE4 // Pin 32 is the RAMPS default
 
 /**
  * Probe Type
@@ -2751,7 +2751,7 @@
 
 // Set number of user-controlled fans. Disable to use all board-defined fans.
 // :[1,2,3,4,5,6,7,8]
-//#define NUM_M106_FANS 1
+#define NUM_M106_FANS 1
 
 // Increase the FAN PWM frequency. Removes the PWM noise but increases heating in the FET/Arduino
 //#define FAST_PWM_FAN
